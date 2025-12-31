@@ -156,6 +156,25 @@
       margin-bottom: 5px;
       display: block;
     }
+    
+    /* --- Achievements --- */
+    .achievement-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .achievement-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(139, 94, 52, 0.1);
+        color: var(--accent);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
 
     /* --- Footer --- */
     footer {
@@ -186,9 +205,10 @@
       <ul class="navbar-nav align-items-center">
         <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="https://blog.ronakbuilds.com" target="_blank">Blog <i class="fas fa-external-link-alt fa-xs"></i></a></li>
         <li class="nav-item ms-lg-3">
-          <a href="/ronaks_resume.pdf" download class="btn btn-custom btn-sm">
+          <a href="/path-to-your-resume.pdf" download class="btn btn-custom btn-sm">
             <i class="fas fa-download me-2"></i>Resume
           </a>
         </li>
@@ -223,7 +243,7 @@
           </div>
           <div class="col-auto">
             <h2 class="fw-bold mb-0">90%</h2>
-            <small class="text-muted">Optimizaton</small>
+            <small class="text-muted">Optimization</small>
           </div>
         </div>
       </div>
@@ -233,36 +253,66 @@
 
 <section class="py-5">
   <div class="container">
-    <p class="text-muted fw-bold text-uppercase mb-4 text-center text-lg-start">Tech Arsenal</p>
-    <div class="row g-3">
-      <div class="col-md-12">
+    <h2 class="section-title mb-4">Tech Arsenal</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-6 col-lg-3">
         <div class="feature-card p-4">
-          <div class="row">
-            <div class="col-md-3 mb-3 mb-md-0">
-              <strong class="d-block mb-2">Core</strong>
+            <h5 class="fw-bold mb-3"><i class="fas fa-code me-2" style="color:var(--accent)"></i>Languages</h5>
+            <div>
               <span class="skill-tag">Python</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">C++ (STL)</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">HTML5/CSS3</span>
             </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-              <strong class="d-block mb-2">Backend & Web</strong>
-              <span class="skill-tag">Django</span>
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Redis</span>
-              <span class="skill-tag">Celery</span>
-              <span class="skill-tag">PostgreSQL</span>
-            </div>
-             <div class="col-md-5">
-              <strong class="d-block mb-2">AI & Cloud</strong>
-              <span class="skill-tag">LangChain</span>
-              <span class="skill-tag">n8n</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">WhatsApp API</span>
-            </div>
-          </div>
         </div>
       </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card p-4">
+            <h5 class="fw-bold mb-3"><i class="fas fa-layer-group me-2" style="color:var(--accent)"></i>Frameworks</h5>
+             <div>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card p-4">
+            <h5 class="fw-bold mb-3"><i class="fas fa-server me-2" style="color:var(--accent)"></i>Data & Infra</h5>
+             <div>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Redis</span>
+              <span class="skill-tag">TimescaleDB</span>
+              <span class="skill-tag">Celery</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card p-4">
+            <h5 class="fw-bold mb-3"><i class="fas fa-robot me-2" style="color:var(--accent)"></i>Tools & AI</h5>
+             <div>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">LangGraph</span>
+              <span class="skill-tag">n8n</span>
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Jira</span>
+            </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -299,7 +349,62 @@
   </div>
 </section>
 
-<section class="py-5 bg-white" id="projects">
+<section class="py-5 bg-white" id="education">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                 <h2 class="section-title">Education</h2>
+                 <div class="feature-card p-4">
+                    <h4 class="fw-bold">B.Tech in Computer Science</h4>
+                    <p class="text-muted mb-1">Lovely Professional University, Phagwara</p>
+                    <span class="badge bg-dark mb-3">2019 - 2023</span>
+                    <h5 class="fw-bold" style="color: var(--accent);">CGPA: 8.26 / 10.0</h5>
+                 </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class="section-title">Achievements</h2>
+                <div class="feature-card p-4">
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <div>
+                            <strong class="d-block">Top 3% Coder</strong>
+                            <span class="text-muted small">LeetCode Global Ranking</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                        <div>
+                            <strong class="d-block">4 Star Coder</strong>
+                            <span class="text-muted small">CodeChef</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                        <div>
+                            <strong class="d-block">Rank 9 / 500+</strong>
+                            <span class="text-muted small">GeeksforGeeks Coders Combat</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div>
+                            <strong class="d-block">Rank 418 / 14k+</strong>
+                            <span class="text-muted small">Newton's Grand Coding Contest</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="projects">
   <div class="container">
     <div class="d-flex justify-content-between align-items-end mb-5">
       <h2 class="section-title mb-0">Featured Projects</h2>
@@ -383,7 +488,7 @@
     <h2 class="fw-bold mb-4">Let's build something great.</h2>
     <div class="d-flex justify-content-center gap-3 mb-5">
       <a href="mailto:ronakkhandlwl@gmail.com" class="btn btn-custom">Get in Touch</a>
-      <a href="/ronaks_resume.pdf" download class="btn btn-outline-custom">Download Resume</a>
+      <a href="/path-to-your-resume.pdf" download class="btn btn-outline-custom">Download Resume</a>
     </div>
     
     <div class="social-links mb-3">
